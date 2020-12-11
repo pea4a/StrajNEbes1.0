@@ -174,9 +174,9 @@ body {
 .card-container {
 	text-align: center;
   cursor: pointer;
-  height: 520px;
+  height: 600px;
   position: relative;
-  width: 750px;
+  width: 1000px;
 }
 .card {
 	margin-left:400px;
@@ -203,4 +203,55 @@ body {
   line-height: 150px;
   text-align: center;
   transform: rotateY(180deg);
+}
+.gaonutosal {
+  float: left;
+  width: 37%;
+  padding: 0 1em;
+}
+
+.pesontedan {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #f3f1f1;
+  overflow: hidden;
+}
+
+.pesontedan input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.pesontedan label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #1c3e5d;
+  line-height: 3;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #333131;
+  font-size: 17px;
+}
+
+.pesontedan-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #0d7b8e;
+  transition: max-height .40s;
+  font-size: 14px;
+  color: #fffdfd;
+  text-shadow: 0 1px 0 #292727;
+}
+
+.pesontedan-content {
+  background: #0f6f80;
+}
+.pesontedan-content p {
+  margin: 1em;
+}
+/* :checked */
+.pesontedan input:checked ~ .pesontedan-content {
+  max-height: 100vh;
 }
